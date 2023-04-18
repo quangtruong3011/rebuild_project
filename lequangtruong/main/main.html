@@ -723,15 +723,38 @@
             <div>
                 <div class="container">
                     <div class="flex">
-                        <div>
+                        <div class="relative">
+                            <img src="./img/banner/banner-bg1.png" alt="">
                             <a href="">
-                                <img src="./img/banner/banner-bg1.png" alt="">
-                                <div>
-                                    <span>Hurry up and Get 25% Discount</span>
-                                    <h2>Deals Of The Day</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>
+
+                                <div class="absolute top-[100px] start-[100px] ">
+                                    <span class="text-base text-[#ee2761] mb-3">Hurry up and Get 25% Discount</span>
+                                    <h2 class="font-bold text-4xl mb-5">Deals Of The Day</h2>
+                                    <p class="text-base text-[#606060e] mb-9">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, <br>
                                         sed do eiusmod tempor incididunt ut labore</p>
-                                    
+                                    <div class="flex mb-10 items-center">
+                                        <div class="flex flex-col justify-center items-center border bg-white p-3">
+                                            <h2 id="isDays" class="font-bold text-4xl"></h2>
+                                            <span class="text-lg">Days</span>
+                                        </div>
+                                        <span class="font-bold text-5xl px-3">:</span>
+                                        <div class="flex flex-col justify-center items-center border bg-white p-3">
+                                            <h2 id="isHrs" class="font-bold text-4xl"></h2>
+                                            <span class="text-lg">Hrs</span>
+                                        </div>
+                                        <span class="font-bold text-5xl px-3">:</span>
+                                        <div class="flex flex-col justify-center items-center border bg-white p-3">
+                                            <h2 id="isMins" class="font-bold text-4xl"></h2>
+                                            <span>Mins</span>
+                                        </div>
+                                        <span class="font-bold text-5xl px-3">:</span>
+                                        <div class="flex flex-col justify-center items-center border bg-white p-3">
+                                            <h2 id="isSecs" class="font-bold text-4xl"></h2>
+                                            <span class="text-lg">Secs</span>
+                                        </div>
+                                    </div>
+                                    <a class="text-lg text-white bg-[#ee2761] p-3 rounded" href="">Show Collection <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
                             </a>
                         </div>
@@ -764,7 +787,7 @@
                                 <div class="absolute top-0 p-20 ">
                                     <span>Pick Your Items</span>
                                     <h2 class="font-bold text-xl mb-3">Up to 25% Off Order Now</h2>
-                                    <a href="">Shop now</a>
+                                    <a class="underline" href="">Shop now</a>
                                 </div>
                             </a>
                         </div>
@@ -775,7 +798,7 @@
                                 <div class="absolute top-0 p-20 ">
                                     <span>Special offer</span>
                                     <h2 class="font-bold text-xl mb-3">Up to 35% Off Order Now</h2>
-                                    <a href="">Discover Now</a>
+                                    <a class="underline" href="">Discover Now</a>
                                 </div>
                             </a>
                         </div>
@@ -798,7 +821,7 @@
                                     <br>
                                     nulla eaque harum facere, rem soluta minus nihil.
                                 </p>
-                                <a class="bg-[#ee2761] p-3 px-6 rounded-md text-white hover:bg-[#061738] " href="">Shop
+                                <a class="bg-[#ee2761] p-3 px-6 rounded-md text-white hover:bg-[#061738]" href="">Shop
                                     Now <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </a>
