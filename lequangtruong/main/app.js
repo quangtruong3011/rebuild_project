@@ -1,65 +1,32 @@
-const trendingProduct = [
+// Thiết lập thời gian kết thúc đếm ngược (định dạng: "Tháng ngày, năm giờ:phút:giây")
+var countDownDate = new Date("Jul 1, 2023 00:00:00").getTime();
 
-];
-const newProduct = [
-    {   
-        id: 1,
-        title: "",
-        image: "",
-        price:{
-            oldPrice: 110,
-            newPrice: 180,
-        },
-        category: "loren...",
-        description: "",
-    },
-];
+// Cập nhật đồng hồ đếm ngược mỗi 1 giây
+var x = setInterval(function () {
 
-// Thêm số lượng sản phẩm
-var quantity = document.getElementById("quantity");
-var increase = document.getElementById("increase");
-var decrease = document.getElementById("decrease");
+  // Lấy thời gian hiện tại
+  var now = new Date().getTime();
 
-increase.addEventListener("click", function() {
-  quantity.stepUp();
-});
+  // Tính khoảng cách thời gian giữa thời gian hiện tại và thời gian kết thúc đếm ngược
+  var distance = countDownDate - now;
 
-decrease.addEventListener("click", function() {
-  quantity.stepDown();
-});
+  // Tính toán số ngày, giờ, phút và giây còn lại
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+  // Hiển thị kết quả trong phần tử có id="countdown"
+  document.getElementById("isDays").innerHTML = "-" + days;
+  document.getElementById("isHrs").innerHTML = "-" + hours;
+  document.getElementById("isMins").innerHTML = "-" + minutes;
+  document.getElementById("isSecs").innerHTML = "-" + seconds;
 
-// Scoll top
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("btn-scroll-top").classList.remove("hidden");
-  } else {
-    document.getElementById("btn-scroll-top").classList.add("hidden");
+
+  // Nếu đếm ngược kết thúc, hiển thị thông báo
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "Đếm ngược đã kết thúc!";
   }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-document.getElementById("btn-scroll-top").addEventListener("click", topFunction);
-
+}, 1000);

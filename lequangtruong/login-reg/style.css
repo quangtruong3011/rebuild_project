@@ -9,6 +9,7 @@ ul li {
 .section1 {
     background: url("./img/bg/breadcrumb-bg.png");
     background-repeat: no-repeat;
+    background-position: top;
 }
 
 .header__topbar {
