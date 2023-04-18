@@ -4,5 +4,4 @@ input.addEventListener('input', function() {
 });
 
 const grandTotal = document.querySelector('#grandTotal').textContent;
-
 localStorage.setItem("grandTotal", grandTotal)

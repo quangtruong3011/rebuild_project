@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./checkout.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-content">
+        <h2 class="grandTotalShow"></h2>
+        <h2 class="pay-title">Customer's information</h2>
+      </div>
+
+      <div class="mid-content">
+        <form id="offline-form">
+          <p class="rows">
+            <input
+              type="text"
+              class="input"
+              id="buyerNameInp1"
+              placeholder="First name (optional)"
+            />
+            <input
+              type="text"
+              class="input"
+              id="buyerNameInp"
+              placeholder="Last name"
+            />
+          </p>
+
+          <p class="rows">
+            <input
+              type="text"
+              class="input"
+              id="addressInp"
+              placeholder="Address"
+            />
+          </p>
+
+          <p class="rows">
+            <input
+              type="text"
+              class="input"
+              placeholder="Apartment, suite, etc. (optional)"
+            />
+          </p>
+
+          <p class="rows">
+            <input type="text" class="input" id="cityInp" placeholder="City" />
+          </p>
+
+          <p class="rows">
+            <input
+              type="number"
+              class="input"
+              id="phoneNumInp"
+              placeholder="Phone number"
+            />
+          </p>
+        </form>
+      </div>
+
+      <div class="btm-content">
+        <h2 class="pay-title">Choose your payment method</h2>
+        <div class="payMethodBox">
+          <button
+            type="button"
+            class="payMethodBtn btn btn-primary"
+            id="payLaterBtn"
+          >
+            Cash on delivery
+          </button>
+          <button
+            type="button"
+            class="payMethodBtn btn btn-success"
+            id="payNowBtn"
+          >
+            Online payment
+          </button>
+        </div>
+
+        <form id="online-form" style="display: none">
+          <h4 class="rows">Card details</h4>
+          
+          <div class="rows">
+            <span>
+              <p class="label"> Card number </p>
+              <input
+                class="input"
+                id="cardNumInp"
+                type="number"
+                placeholder="####-####-########"
+              />
+            </span>
+            <span class="right-span">
+              <p class="label"> Expires </p>
+              <input class="input" id="expDateInp" type="date" />
+            </span>
+          </div>
+
+          <div class="rows">
+            <span>
+              <p class="label"> Cardholder name </p>
+              <input class="input" type="text" id="cardNameInp" />
+            </span>
+            <span class="right-span">
+              <p class="label"> CVV/CVC </p>
+              <input
+                class="input"
+                id="cvvNumInp"
+                type="number"
+                placeholder="xxx"
+              />
+            </span>
+
+          </div>
+         
+          <button class="btn btn-success" id="submitBtn" type="submit">
+            submit
+          </button>
+        </form>
+      </div>
+      <div class="pop-up" id="popUpWait" style="display: none">
+        <p style="font-size: medium;"><i class="fa-regular fa-clock"></i></p>
+        <p>Please wait while payment details are being sent.</p>
+      </div>
+      <div class="pop-up" id="popUpCnfrm" style="display: none">
+        <p>Payment confirmed. Thank you for shopping with us.</p>
+        <a class="btn btn-primary" href="lequangtruong\main\main.html">Back to shopping</a>
+      </div>
+    </div>
+
+    <script src="./checkout.js"></script>
+  </body>
+</html>
