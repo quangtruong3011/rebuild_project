@@ -1,200 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-  <!-- Demo styles -->
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
+    <title>Đồng hồ đếm ngược</title>
 </head>
 
 <body>
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="product-items">
-            <div class="product-items-thumbnail relative">
-                <a href="">
-                    <img class="product-items-img" src="./img/product/product1.png" alt="">
-                    <img class="product-items-img absolute top-0 transition duration-500 ease-in-out opacity-0 hover:opacity-100"
-                        src="./img/product/product2.png" alt="">
-                </a>
-                <div
-                    class="absolute top-0 start-0 bg-[#ee2761] rounded-tl-[10px] rounded-br-[10px] px-1 m-3">
-                    <span class="text-white">Sale</span>
-                </div>
-            </div>
-            <div class="product-items-content">
-                <span>Jacket, Women</span>
-                <h3 class="text-xl font-bold">Oversize Cotton Dress</h3>
-                <div class="product-items-price">
-                    <span class="new-price">$110</span>
-                    <span>-</span>
-                    <span class="old-price line-through">$180</span>
-                </div>
-                <ul class="flex mb-1">
-                    <li class="mr-1">
-                        <span><i class="fa-solid fa-star"></i></span>
-                    </li>
-                    <li class="mr-1">
-                        <span><i class="fa-solid fa-star"></i></span>
-                    </li>
-                    <li class="mr-1">
-                        <span><i class="fa-solid fa-star"></i></span>
-                    </li>
-                    <li class="mr-1">
-                        <span><i class="fa-solid fa-star"></i></span>
-                    </li>
-                    <li>
-                        <span><i class="fa-solid fa-star"></i></span>
-                    </li>
-                </ul>
-                <ul class="flex">
-                    <li class="border py-1 px-2 mr-2 hover:bg-[#ee2761] hover:text-white">
-                        <a href="">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span> + Add to cart</span>
-                        </a>
-                    </li>
-                    <li class="border py-1 px-2 mr-2 hover:bg-[#ee2761] hover:text-white">
-                        <a href="">
-                            <i class="fa-regular fa-heart"></i>
-                        </a>
-                    </li>
-                    <li class="border py-1 px-2 mr-2 hover:bg-[#ee2761] hover:text-white">
-                        <a href="">
-                            <i class="fa-solid fa-eye"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="product-items">
-            <div class="product-items-thumbnail relative">
-                <a href="">
-                    <img class="product-items-img" src="./img/product/product1.png" alt="">
-                    <img class="product-items-img absolute top-0 transition duration-500 ease-in-out opacity-0 hover:opacity-100"
-                        src="./img/product/product2.png" alt="">
-                </a>
-                <div
-                    class="absolute top-0 start-0 bg-[#ee2761] rounded-tl-[10px] rounded-br-[10px] px-1 m-3">
-                    <span class="text-white">Sale</span>
-                </div>
-            </div>
-            <div class="product-items-content">
-                <span>Jacket, Women</span>
-                <h3 class="text-xl font-bold">Oversize Cotton Dress</h3>
-                <div class="product-items-price">
-                    <span class="new-price">$110</span>
-                    <span>-</span>
-                    <span class="old-price line-through">$180</span>
-                </div>
-                <ul class="flex mb-1">
-                    <li class="mr-1">
-                        <span><i class="fa-solid fa-star"></i></span>
-                    </li>
-                    <li class="mr-1">
-                        <span><i class="fa-solid fa-star"></i></span>
-                    </li>
-                    <li class="mr-1">
-                        <span><i class="fa-solid fa-star"></i></span>
-                    </li>
-                    <li class="mr-1">
-                        <span><i class="fa-solid fa-star"></i></span>
-                    </li>
-                    <li>
-                        <span><i class="fa-solid fa-star"></i></span>
-                    </li>
-                </ul>
-                <ul class="flex">
-                    <li class="border py-1 px-2 mr-2 hover:bg-[#ee2761] hover:text-white">
-                        <a href="">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span> + Add to cart</span>
-                        </a>
-                    </li>
-                    <li class="border py-1 px-2 mr-2 hover:bg-[#ee2761] hover:text-white">
-                        <a href="">
-                            <i class="fa-regular fa-heart"></i>
-                        </a>
-                    </li>
-                    <li class="border py-1 px-2 mr-2 hover:bg-[#ee2761] hover:text-white">
-                        <a href="">
-                            <i class="fa-solid fa-eye"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
+    <h2 id="isDays"></h2>
+    <h2 id="countdown"></h2>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // Thiết lập thời gian kết thúc đếm ngược (định dạng: "Tháng ngày, năm giờ:phút:giây")
+        var countDownDate = new Date("Jul 1, 2023 00:00:00").getTime();
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
+        // Cập nhật đồng hồ đếm ngược mỗi 1 giây
+        var x = setInterval(function () {
+
+            // Lấy thời gian hiện tại
+            var now = new Date().getTime();
+
+            // Tính khoảng cách thời gian giữa thời gian hiện tại và thời gian kết thúc đếm ngược
+            var distance = countDownDate - now;
+
+            // Tính toán số ngày, giờ, phút và giây còn lại
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Hiển thị kết quả trong phần tử có id="countdown"
+            // document.getElementById("countdown").innerHTML = "Còn " + days + " ngày, " + hours + " giờ, "
+            //     + minutes + " phút, và " + seconds + " giây.";
+            document.getElementsById("isDays").innerHTML = "-" + days;
+
+
+            // Nếu đếm ngược kết thúc, hiển thị thông báo
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "Đếm ngược đã kết thúc!";
+            }
+        }, 1000);
+    </script>
+
 </body>
 
 </html>

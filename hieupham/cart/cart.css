@@ -1,0 +1,99 @@
+a {
+  text-decoration: none !important;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.section1 {
+  background: url("./img/bg/breadcrumb-bg.png");
+  background-repeat: no-repeat;
+}
+
+.header__topbar {
+  background-color: #ee2761;
+}
+
+.footer__section {
+  background-color: black;
+  color: white;
+}
+
+.shipping__section {
+  margin-bottom: 5rem;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+.border-radius-5 {
+  width: 10em;
+  border-radius: 5px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.cart__summary {
+  box-shadow: 0px 8px 23px rgba(218, 224, 249, 0.7);
+  border-radius: 16px;
+  padding: 2em;
+}
+
+.cart__remove--btn {
+    border: none;
+    background-color: white;
+}
+
+input[type="number"] {
+  max-width: 50px;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity__number {
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  width: auto;
+  padding: 0;
+}
+
+.quantity__value {
+  background-color: #f2f2f2;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 5px;
+  padding: 3px 10px;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quantity__value:hover {
+  background-color: #e6e6e6;
+}

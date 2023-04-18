@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="../main/dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -721,6 +720,26 @@
             </div>
         </section>
         <section>
+            <div>
+                <div class="container">
+                    <div class="flex">
+                        <div>
+                            <a href="">
+                                <img src="./img/banner/banner-bg1.png" alt="">
+                                <div>
+                                    <span>Hurry up and Get 25% Discount</span>
+                                    <h2>Deals Of The Day</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <br>
+                                        sed do eiusmod tempor incididunt ut labore</p>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
             <div class="mb-28">
                 <div class="container">
                     <div class="flex flex-col items-center">
@@ -729,7 +748,7 @@
                             <img src="./img/heading-shape.png" alt="">
                         </div>
                         <div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -788,25 +807,9 @@
             </div>
         </section>
     </main>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-    <script>
-        // Hiển thị nút khi người dùng cuộn xuống 30px từ đầu trang
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 30) {
-                document.getElementById("myBtn").style.display = "block";
-            } else {
-                document.getElementById("myBtn").style.display = "none";
-            }
-        }
-
-        // Cuộn về đầu trang khi người dùng nhấp vào nút
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <button id="btn-scroll-top" class="fixed bottom-4 right-4 z-50 p-2 rounded-md bg-blue-500 text-white hidden">
+        Scroll Top
+    </button>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
