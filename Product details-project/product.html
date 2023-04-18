@@ -16,118 +16,113 @@
 </head>
 
 <body>
-    <header>
-        <div class="container1">
-            <div class="container1-btn">
-                <div class="container1-btn-phone">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <a href="#">0912.234.435</a>
+    <section>
+        <div class="box">
+            <div class="box-item">
+                <div class="box-on">
+                    <img src="./big-product2.jpg" alt="">
                 </div>
-                <div class="container1-form-btn">
-                    <div class="login">
-                        <a href="register/login.html"> Đăng nhập </a>
+                <div class="box-or-list">
+                    <h2 class="item">Oversize Cotton Dress</h2>
+                    <div class="discount-price">
+                        <span>$110 - </span>
+                        <span class="price">$178</span>
                     </div>
-                    <div class="register">
-                        <a href="register/register.html?">Đăng kí</a>
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <p>(24)</p>
+                    </div>
+                    <p class="product-details-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam
+                        ullam is recusandae laborum explicabo id sequi quisquam, ab sunt deleniti quidem ea animi
+                        facilis
+                        quod nostrum odit! Repellendus voluptas suscipit cum harum dolor sciunt.</p>
+                    <div class="text">Weight :</div>
+                    <div class="size">
+                        <div id="1" onclick="chooseSize(id)" class="size-item">5 kg</div>
+                        <div id="2" onclick="chooseSize(id)" class="size-item">3 kg</div>
+                        <div id="3" onclick="chooseSize(id)" class="size-item">2 kg</div>
+                        <!-- <div id="4" onclick="chooseSize(id)" class="size-item">XL</div> -->
+                    </div>
+                    <!-- <div class="textNumber">Số lượng</div> -->
+                    <div class="isCount-btn">
+                        <div class="isCount">
+                            <button onclick="dec()" class="dec buttonHandle"><i class="fa fa-minus"></i></button>
+                            <input id="count" class="textCount" value="1">
+                            <button onclick="inc()" class="inc buttonHandle"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div>
+                            <button class="add-item">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="order">
+                        <a href="#" class="wishlist-icon"><i class="fa-solid fa-heart"></i>
+                            Add to Wishlist
+                        </a>
+                        <button onclick="btn()" id="btn" class="order-1">Buy it now</button>
+                        <!-- <button class="order-2"><i class="fa-solid fa-cart-shopping"></i></button> -->
+                    </div>
+                    <div class="product-info">
+                        <p><strong>Barcode:</strong> <span>565461</span> </p>
+                        <p><strong>Sky:</strong> <span>4420</span> </p>
+                        <p><strong>Vendor:</strong> <span>Belo</span> </p>
+                        <p><strong>Type:</strong> <span>Dress</span> </p>
+                    </div>
+                    <div class="social">
+                        <div>Social Share:</div>
+                        <ul>
+                            <li><i class="fa-brands fa-square-facebook"></i></li>
+                            <li><i class="fa-brands fa-square-twitter"></i></li>
+                            <li><i class="fa-brands fa-square-instagram"></i></li>
+                            <li><i class="fa-brands fa-square-youtube"></i></li>
+                        </ul>
+                    </div>
+                    <div class="checkout">
+                        <h5 class="checkout__title">Guaranteed Safe Checkout</h5>
+                        <img class="checkout__img" src="./safe-checkout.png" alt="Payment Image">
                     </div>
                 </div>
             </div>
-            <div class="container1-menu">
-                <div class="container1-logo">
-                    <img src="./logo1.jpg" alt="" width="120" height="90">
-                </div>
-                <div class="container1-menu-btn">
-                    <a href="">Men</a>
-                    <a href="">Women</a>
-                </div>
-                <div class="container1-menu-live">
-                    <a href="">Thời trang Brothers7ven</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="box">
-        <div class="box-item">
-            <div class="box-on">
-                <img src="./big-product2.jpg" alt="">
-            </div>
-            <div class="box-or-list">
-                <h2 class="item">Oversize Cotton Dress</h2>
-                <div class="discount-price">
-                    <span>$110 - </span>
-                    <span class="price">$178</span>
-                </div>
-                <div class="icon">
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <i class="fa-sharp fa-solid fa-star"></i>
-                    <p>(24)</p>
-                </div>
-                <p class="product-details-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam
-                    ullam is recusandae laborum explicabo id sequi quisquam, ab sunt deleniti quidem ea animi facilis
-                    quod nostrum odit! Repellendus voluptas suscipit cum harum dolor sciunt.</p>
-                <div class="text">Weight :</div>
-                <div class="size">
-                    <div id="1" onclick="chooseSize(id)" class="size-item">5 kg</div>
-                    <div id="2" onclick="chooseSize(id)" class="size-item">3 kg</div>
-                    <div id="3" onclick="chooseSize(id)" class="size-item">2 kg</div>
-                    <!-- <div id="4" onclick="chooseSize(id)" class="size-item">XL</div> -->
-                </div>
-                <!-- <div class="textNumber">Số lượng</div> -->
-                <div class="isCount-btn">
-                    <div class="isCount">
-                        <button onclick="dec()" class="dec buttonHandle"><i class="fa fa-minus"></i></button>
-                        <input id="count" class="textCount" value="1">
-                        <button onclick="inc()" class="inc buttonHandle"><i class="fa fa-plus"></i></button>
+            <div class="box_infomation_product">
+                <!-- Tab items -->
+                <div class="tabs">
+                    <div class="tab-item active">
+                        Description
                     </div>
-                    <div>
-                        <button class="add-item">Add To Cart</button>
+                    <!-- <div class="tab-item">
+                    Product Reviews
+                </div> -->
+                    <div class="tab-item">
+                        Additional Info
                     </div>
+                    <div class="tab-item">
+                        Custom Content
+                    </div>
+                    <div class="line"></div>
                 </div>
-                <div class="order">
-                    <a href="#" class="wishlist-icon"><i class="fa-solid fa-heart"></i>
-                        Add to Wishlist
-                    </a>
-                    <button onclick="btn()" id="btn" class="order-1">Buy it now</button>
-                    <!-- <button class="order-2"><i class="fa-solid fa-cart-shopping"></i></button> -->
-                </div>
-                <div class="product-info">
-                    <p><strong>Barcode:</strong> <span>565461</span> </p>
-                    <p><strong>Sky:</strong> <span>4420</span> </p>
-                    <p><strong>Vendor:</strong> <span>Belo</span> </p>
-                    <p><strong>Type:</strong> <span>Dress</span> </p>
-                </div>
-                <div class="social">
-                    <div>Social Share:</div>
-                    <ul>
-                        <li><i class="fa-brands fa-square-facebook"></i></li>
-                        <li><i class="fa-brands fa-square-twitter"></i></li>
-                        <li><i class="fa-brands fa-square-instagram"></i></li>
-                        <li><i class="fa-brands fa-square-youtube"></i></li>
-                    </ul>
-                </div>
-                <div class="checkout">
-                    <h5 class="checkout__title">Guaranteed Safe Checkout</h5>
-                    <img class="checkout__img" src="./safe-checkout.png" alt="Payment Image">
-                </div>
-            </div>
-        </div>
-        <div class="box_infomation_product">
+    </section>
+    <section>
+        <div>
             <!-- Tab items -->
             <div class="tabs">
                 <div class="tab-item active">
-                    Description
-                </div>
-                <!-- <div class="tab-item">
-                    Product Reviews
-                </div> -->
-                <div class="tab-item">
-                    Additional Info
+                    <i class="tab-icon fas fa-code"></i>
+                    React
                 </div>
                 <div class="tab-item">
-                    Custom Content
+                    <i class="tab-icon fas fa-cog"></i>
+                    Angular
+                </div>
+                <div class="tab-item">
+                    <i class="tab-icon fas fa-plus-circle"></i>
+                    Ember
+                </div>
+                <div class="tab-item">
+                    <i class="tab-icon fas fa-pen-nib"></i>
+                    Vue.JS
                 </div>
                 <div class="line"></div>
             </div>
@@ -135,135 +130,30 @@
             <!-- Tab content -->
             <div class="tab-content">
                 <div class="tab-pane active">
-                    <div class="tab-content-1">
-                        <h2>Nam provident sequi</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam provident sequi, nemo
-                            sapiente culpa nostrum rem eum perferendis quibusdam, magnam a vitae corporis! Magnam enim
-                            modi,
-                            illo harum suscipit tempore aut dolore doloribus deserunt voluptatum illum, est porro?
-                            Ducimus
-                            dolore accusamus impedit ipsum maiores, ea iusto temporibus numquam eaque mollitia fugiat
-                            laborum dolor tempora eligendi voluptatem quis necessitatibus nam ab?</p>
-                    </div>
-                    <div class="tab-content-detail">
-                        <h4>More Details</h4>
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-arrow-right"></i>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolorum?
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-arrow-right"></i>
-                                Magnam enim modi, illo harum suscipit tempore aut dolore?
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-arrow-right"></i>
-                                Numquam eaque mollitia fugiat laborum dolor tempora;
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-arrow-right"></i>
-                                Sit amet consectetur adipisicing elit. Quo delectus repellat facere maiores.
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-arrow-right"></i>
-                                Repellendus itaque sit quia consequuntur, unde veritatis. dolorum?
-                            </li>
-                        </ul>
-                    </div>
+                    <h2>React</h2>
+                    <p>React makes it painless to create interactive UIs. Design simple views for each state in your
+                        application, and React will efficiently update and render just the right components when your
+                        data changes.</p>
                 </div>
                 <div class="tab-pane">
-                    <h2>Nam provident sequi</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Nam provident sequi, nemo sapiente culpa nostrum rem eum perferendis quibusdam, magnam a
-                        vitae corporis! Magnam enim modi, illo harum suscipit tempore aut dolore doloribus deserunt
-                        voluptatum illum, est porro? Ducimus dolore accusamus impedit ipsum maiores, ea iusto
-                        temporibus numquam eaque mollitia fugiat laborum dolor tempora eligendi voluptatem quis
-                        necessitatibus nam ab?</p>
+                    <h2>Angular</h2>
+                    <p>Angular is an application design framework and development platform for creating efficient and
+                        sophisticated single-page apps.</p>
                 </div>
                 <div class="tab-pane">
-                    <div>
-                        <h2>Nam provident sequi</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam provident sequi, nemo
-                            sapiente culpa nostrum rem eum perferendis quibusdam, magnam a vitae corporis! Magnam enim
-                            modi, illo harum suscipit tempore aut dolore doloribus deserunt voluptatum illum, est porro?
-                            Ducimus dolore accusamus impedit ipsum maiores, ea iusto temporibus numquam eaque mollitia
-                            fugiat laborum dolor tempora eligendi voluptatem quis necessitatibus nam ab?</p>
-                    </div>
+                    <h2>Ember</h2>
+                    <p>Ember.js is a productive, battle-tested JavaScript framework for building modern web
+                        applications. It includes everything you need to build rich UIs that work on any device.</p>
+                </div>
+                <div class="tab-pane">
+                    <h2>Vue.js</h2>
+                    <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces.
+                        Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally
+                        adoptable. </p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <div class="footer-logo">
-            <img src="./logo1.jpg" alt="" width="120" height="90">
-            <br>
-            <br>
-            <p>Copyright@2023</p>
-        </div>
-        <div class="footer-menu">
-            <h3>GIỚI THIỆU</h3>
-            <br>
-            <br>
-            <p>
-                <a href="">Bộ sưu tập</a>
-            </p>
-            <br>
-            <p>
-                <a href="">Gía trị cốt lõi</a>
-            </p>
-            <br>
-            <p>
-                <a href="">Liên hệ</a>
-            </p>
-        </div>
-        <div class="footer-client">
-            <h3>DỊCH VỤ KHÁCH HÀNG</h3>
-            <br>
-            <br>
-            <p>
-                <a href="">Chính sách khách hàng thân thiết</a>
-            </p>
-            <br>
-            <p>
-                <a href="">Chính sách bảo hành-đổi trả</a>
-            </p>
-            <br>
-            <p>
-                <a href="">Chính sách bảo mật</a>
-            </p>
-            <br>
-            <p>
-                <a href="">Chính sách vận chuyển và thanh toán</a>
-            </p>
-        </div>
-        <div class="footer-call">
-            <h3>TƯ VẤN</h3>
-            <br>
-            <br>
-            <p>
-                <a href="">Tư vấn phong cách</a>
-            </p>
-            <br>
-            <p>
-                <a href="">Tư vấn chọn size</a>
-            </p>
-            <br>
-            <p>
-                <a href="">Hỏi đáp</a>
-            </p>
-        </div>
-        <div class="footer-contact">
-            <h3>THEO DÕI BẢN TIN CỦA CHÚNG TÔI</h3>
-            <br>
-            <div class="footer-email">
-                <p>
-                    <input type="email" placeholder="Nhập email của bạn..." width="100" height="50">
-                    <button>ĐĂNG KÝ</button>
-                </p>
-            </div>
-        </div>
-    </div>
-
+    </section>
     <script src="./product.js"></script>
 
 
