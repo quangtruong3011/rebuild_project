@@ -1,48 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Đồng hồ đếm ngược</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./test.css">
+    <style>
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a,
+        .dropdown .dropbtn {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover:not(.active),
+        .dropdown:hover .dropbtn {
+            background-color: #111;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 
 <body>
-    <h2 id="isDays"></h2>
-    <h2 id="countdown"></h2>
-
-    <script>
-        // Thiết lập thời gian kết thúc đếm ngược (định dạng: "Tháng ngày, năm giờ:phút:giây")
-        var countDownDate = new Date("Jul 1, 2023 00:00:00").getTime();
-
-        // Cập nhật đồng hồ đếm ngược mỗi 1 giây
-        var x = setInterval(function () {
-
-            // Lấy thời gian hiện tại
-            var now = new Date().getTime();
-
-            // Tính khoảng cách thời gian giữa thời gian hiện tại và thời gian kết thúc đếm ngược
-            var distance = countDownDate - now;
-
-            // Tính toán số ngày, giờ, phút và giây còn lại
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Hiển thị kết quả trong phần tử có id="countdown"
-            document.getElementById("isDays").innerHTML = "-" + days;
-            document.getElementById("countdown").innerHTML = "Còn " + days + " ngày, " + hours + " giờ, "
-                + minutes + " phút, và " + seconds + " giây.";
-           
-
-
-            // Nếu đếm ngược kết thúc, hiển thị thông báo
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdown").innerHTML = "Đếm ngược đã kết thúc!";
-            }
-        }, 1000);
-    </script>
-
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#">Home</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Home 1</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Home 3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Shop</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Shop 1</a></li>
+                    <li><a href="#">Shop 2</a></li>
+                    <li><a href="#">Shop 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 </body>
 
 </html>
